@@ -11,3 +11,8 @@ An **example** to clarify:
 
 Another reason to think about which cases to automate is simply that not every automated tests is as useful or cost efficient in the long run.
 I advise you to look on YouTube for Angie Jones' presentation on "Which tests should we automate" - also see https://slides.com/angiejones/which-tests-should-we-automate#/20
+
+
+## Meta
+- Author: [FDM](https://sqa.stackexchange.com/users/8869/fdm)
+- [Online version](https://sqa.stackexchange.com/a/45609/52466)

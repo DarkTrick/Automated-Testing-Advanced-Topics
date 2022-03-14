@@ -32,7 +32,9 @@ The following list links to various topics.
 
 - More scientific approach on *what tests to automate* [youtube](https://www.youtube.com/watch?v=VL-_pnICmGY)
 
-- About overlapping tests: [offline](local_resources/overlapping_tests.md) | [online](https://sqa.stackexchange.com/a/45608/52466)
+- About overlapping tests:
+  - [offline](local_resources/overlapping_tests.md) | [online](https://sqa.stackexchange.com/a/45608/52466)
+  - "If you have no tests, start with End-to-End tests" [offline](local_resources/overlapping_tests_end-to-end_API.md) | [online](https://sqa.stackexchange.com/a/45610/52466)
 
 - About end-to-end testing: [offline](local_resources/End-to-End_Testing_Tutorial.html) | [online](https://www.tutorialspoint.com/end-to-end-testing-tutorial-what-is-e2e-testing-with-example)
 
