@@ -6,6 +6,7 @@ This page / repo ought to be a collection of practical advanced topics about aut
 
 ![Purpose](local_resources/img_purpose_of_this_repo.png)
 
+
 #### Background
 I'm searching for a couple of years now, but could not find much consolidated useful information for the bridge between *I understand the concept of auto testing* and *I can confidently write a well designed test system*. This collection should help me (and hopefully others) to get on that way.
 
@@ -74,6 +75,7 @@ The following list links to various topics.
 - Martin Fowler - Self Testing Code [online](https://martinfowler.com/bliki/SelfTestingCode.html)
 
 ## More abstract topics
+- Anti Patterns in Test Automation [online](https://sqa.stackexchange.com/questions/8508/what-are-anti-patterns-in-test-automation)
 - Unit testing anti-patterns catalog [online](https://stackoverflow.com/questions/333682/unit-testing-anti-patterns-catalogue?answertab=votes#tab-top)
   - Second Class Citizen (= no good architecture for test code)
   - The Free Ride (= add test cases to existing tests)
@@ -121,3 +123,7 @@ The following list links to various topics.
   - [User Journey Test](https://martinfowler.com/bliki/UserJourneyTest.html)
   - [Story Test](https://martinfowler.com/bliki/StoryTest.html)
 
+
+- Differeent perspective of developer and tester
+  - Developer = synthesizer; Tester = analyzer[offline](./local_resources/Differeent_perspective_of_developer_and_tester.md) | [online](https://sqa.stackexchange.com/a/546/52466)
+-  [offline](./local_resources/developer_tester_idiocratic_differences.md) | [online](https://sqa.stackexchange.com/a/553/52466)
