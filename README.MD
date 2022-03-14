@@ -34,15 +34,44 @@ The following list links to various topics.
 
 - More scientific approach on *what tests to automate* [youtube](https://www.youtube.com/watch?v=VL-_pnICmGY)
 
+- Where to start in a system without any tests
+  - "If you have no tests, start with End-to-End tests, then move them slowly down to lower levels" [offline](local_resources/overlapping_tests_end-to-end_API.md) | [online](https://sqa.stackexchange.com/a/45610/52466)
+  -
 - About overlapping tests:
   - [offline](local_resources/overlapping_tests.md) | [online](https://sqa.stackexchange.com/a/45608/52466)
-  - "If you have no tests, start with End-to-End tests" [offline](local_resources/overlapping_tests_end-to-end_API.md) | [online](https://sqa.stackexchange.com/a/45610/52466)
+
 
 - About end-to-end testing: [offline](local_resources/End-to-End_Testing_Tutorial.html) | [online](https://www.tutorialspoint.com/end-to-end-testing-tutorial-what-is-e2e-testing-with-example)
 
+- Martin Fowler - Testing asynchronous Javascript [online](https://martinfowler.com/articles/asyncJS.html)
+- Martin Fowler - In Memory Test Database [online](https://martinfowler.com/bliki/InMemoryTestDatabase.html)
+- Martin Fowler - GUI Tests: The Page Object [online](https://martinfowler.com/bliki/PageObject.html)
+- Martin Fowler - Self Testing Code [online](https://martinfowler.com/bliki/SelfTestingCode.html)
 
+## More abstract topics
+- Martin Fowler on `testing` [online](https://martinfowler.com/tags/testing.html)
+  - Specification By Example [online](https://martinfowler.com/bliki/SpecificationByExample.html)
+  - Testing Strategies in a Microservice Architecture [online](https://martinfowler.com/articles/microservice-testing)
+  - The Practical Test Pyramid [online](https://martinfowler.com/articles/practical-test-pyramid.html)
+  - Is TDD dead [online](https://martinfowler.com/articles/is-tdd-dead/)
+  - Eradicating Non-Determinism in Tests [online](https://martinfowler.com/articles/nonDeterminism.html)
+  - Mocks Aren't Stubs [online](https://martinfowler.com/articles/mocksArentStubs.html)
+  - Continuous Delivery [online](http://yow.eventer.com/events/1004/talks/1062)
+  - QA in Production [online](https://martinfowler.com/articles/qa-in-production.html)
+  - Test Impact analysis [online](https://martinfowler.com/articles/rise-test-impact-analysis.html)
+  - Database And Build Time [online](https://martinfowler.com/bliki/DatabaseAndBuildTime.html)
+  - Software that isn't testable [online](https://martinfowler.com/bliki/Detestable.html)
+  - Exploratory Testing [online](https://martinfowler.com/bliki/ExploratoryTesting.html)
+  - Humble Objects [online](https://martinfowler.com/bliki/HumbleObject.html)
+  - Self Initializing Fake [online](https://martinfowler.com/bliki/SelfInitializingFake.html)
+  - Testing strategy: Synthetic Monitoring [online](https://martinfowler.com/bliki/SyntheticMonitoring.html)
+- Martin Fowler on `Test Categories` [online](https://martinfowler.com/tags/test%20categories.html)
+  - [On the Diverse And Fantastical Shapes of Testing](https://martinfowler.com/articles/2021-test-shapes.html)
+  - [Unit Test](https://martinfowler.com/bliki/UnitTest.html)
+  - [User Journey Test](https://martinfowler.com/bliki/UserJourneyTest.html)
+  - [Story Test](https://martinfowler.com/bliki/StoryTest.html)
 
-# Open questions
+## Open questions
 
 For the following questions, I couldn't yet find a topic.
 
