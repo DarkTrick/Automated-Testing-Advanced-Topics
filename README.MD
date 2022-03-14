@@ -25,7 +25,7 @@ I don't mean to infringe anyones copyright with the *offline versions*. They are
 ## Misc
 The following list links to various topics.
 
-- Robert Nystrom - How a test suite should look (don't remember concrete chapters) [Game Programming Patterns](http://gameprogrammingpatterns.com/)
+- Robert Nystrom - Game Programming Patterns: How a test suite should look (don't remember concrete chapters) [online](http://gameprogrammingpatterns.com/)
 - Justin Searls - How to stop hating your test suite [youtube](https://www.youtube.com/watch?v=VD51AkG8EZw)
 
 - About What kind of tests to write/ to not write: [offline](local_resources/What_kind_of_tests_to_write.MD) | [online](https://sqa.stackexchange.com/a/45609/52466)
