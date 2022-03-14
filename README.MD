@@ -1,13 +1,13 @@
-(Automated) Software Testing - Advanced topics
+(Automated) Software Testing - Advanced Topics
 ==============================================
 
 
-## What is this? / Purpose
+#### **What is this? / Purpose of this repo**
 For software development there seems to be no book (/consolidated resource) on advanced topics on (auto) testing - Something like follow-up guide on auto testing after one is familiar with the basic concepts (Like if you read a programming book and now need to learn about software architecture) (See also [this question on Stackexchange](https://sqa.stackexchange.com/questions/49876/exhaustive-resources-on-concrete-advanced-test-automation-practices).
 
 ![Purpose](local_resources/img_purpose_of_this_repo.png)
 
-## Copyright infringement
+#### Copyright infringement
 I don't mean to infringe anyones copyright with the *offline versions*. They are there to prevent dead links for the future. If you feel infringed, please contact me or leave a bug report.
 
 
