@@ -1,4 +1,4 @@
-(Automated) Software Testing - Advanced Topics
+Automated Software Testing - Advanced Topics
 ==============================================
 
 
