@@ -19,13 +19,18 @@ For the following questions, I couldn't yet find a topic.
 
 - How do you express the "functional dependency order" of tests? <br>
 I.e. `test2` makes use of functionality `test1` tests exhaustively. How do I express that in a test? Background: I'd If test1 and test2 both fail, it should be clear, that test1 is the one I should look for an error first.
+  - [Idea: Maybe use tags?](./local_resources/structure_tests_with_tags.md)
 
 - How do I express priorities for tests? <Br>
 E.g. there is `test_show_error_message` and `test_software_starts_up`. `test_software_starts_up` is the the test with more priority and if anything happens should be looked at first. How do I express that?
+  - [Idea: Maybe use tags?](./local_resources/structure_tests_with_tags.md)
 
 - How do I express that tests take only short time or a long time to test?
+  - [Idea: Maybe use tags?](./local_resources/structure_tests_with_tags.md)
 
 - How do I express that tests have external dependencies?
+  - [Idea: Maybe use tags?](./local_resources/structure_tests_with_tags.md)
+
 
 - Unit tests, Integration Tests, System Tests, ... Do I have a completely separated test system for each of these? If yes, How do I make sure to not forget to start up each of them after a change?
 
