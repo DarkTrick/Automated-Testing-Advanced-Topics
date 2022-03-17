@@ -23,7 +23,7 @@ This does lead to some interesting contrasts...
 | I like to build things |  I like to break things |
 | Sure, we can use the Beta version of this component in Production |  We should wait until version 2.1 |
 | Willing to bet that there are no more bugs |  Willing to take that bet |
-| Let's slip these changes in now, because I'm  |arting my vacation tomorrow |  Let's not |
+| Let's slip these changes in now, because I'm starting my vacation tomorrow  |  Let's not |
 | That will never happen in Production |  Never is a long time |
 | It works on my machine |  Perhaps your machine is the only one where it works? |
 | The sun'll come out, tomorrow... |  Raindrops keep fallin' on my head... |

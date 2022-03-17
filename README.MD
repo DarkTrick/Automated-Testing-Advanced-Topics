@@ -101,7 +101,7 @@ The following list links to various topics.
   - The Conjoined Twins (= *Integration test* that are called *Unit tests*)
 
 
-- Martin Fowler on `testing` [online](https://martinfowler.com/tags/testing.html)
+- Martin Fowler on *testing* [online](https://martinfowler.com/tags/testing.html)
   - Specification By Example [online](https://martinfowler.com/bliki/SpecificationByExample.html)
   - Testing Strategies in a Microservice Architecture [online](https://martinfowler.com/articles/microservice-testing)
   - The Practical Test Pyramid [online](https://martinfowler.com/articles/practical-test-pyramid.html)
@@ -117,13 +117,20 @@ The following list links to various topics.
   - Humble Objects [online](https://martinfowler.com/bliki/HumbleObject.html)
   - Self Initializing Fake [online](https://martinfowler.com/bliki/SelfInitializingFake.html)
   - Testing strategy: Synthetic Monitoring [online](https://martinfowler.com/bliki/SyntheticMonitoring.html)
-- Martin Fowler on `Test Categories` [online](https://martinfowler.com/tags/test%20categories.html)
+
+- Martin Fowler on *Test Categories* [online](https://martinfowler.com/tags/test%20categories.html)
   - [On the Diverse And Fantastical Shapes of Testing](https://martinfowler.com/articles/2021-test-shapes.html)
   - [Unit Test](https://martinfowler.com/bliki/UnitTest.html)
   - [User Journey Test](https://martinfowler.com/bliki/UserJourneyTest.html)
   - [Story Test](https://martinfowler.com/bliki/StoryTest.html)
 
 
-- Differeent perspective of developer and tester
-  - Developer = synthesizer; Tester = analyzer[offline](./local_resources/Differeent_perspective_of_developer_and_tester.md) | [online](https://sqa.stackexchange.com/a/546/52466)
--  [offline](./local_resources/developer_tester_idiocratic_differences.md) | [online](https://sqa.stackexchange.com/a/553/52466)
+- Different perspective of developer and tester [Stackexchange link](https://sqa.stackexchange.com/questions/545/how-does-a-testers-perspective-towards-software-differ-from-a-developers/548#548)
+  - Developer = synthesizer; Tester = analyzer [offline](./local_resources/Differeent_perspective_of_developer_and_tester.md) | [online](https://sqa.stackexchange.com/a/546/52466)
+  - Idiomatic differences [offline](./local_resources/developer_tester_idiomatic_differences.md) | [online](https://sqa.stackexchange.com/a/553/52466)
+
+
+# Tools
+
+## GUI testing tools
+  - Wikipedia: [List of GUI testing tools](https://en.wikipedia.org/wiki/List_of_GUI_testing_tools)
