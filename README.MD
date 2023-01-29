@@ -11,17 +11,27 @@ This page / repo ought to be a collection of practical advanced topics about aut
 I'm searching for a couple of years now, but could not find much consolidated useful information for the bridge between *I understand the concept of auto testing* and *I can confidently write a well designed test system*. This collection should help me (and hopefully others) to get on that way.
 
 #### Copyright Infringement Notice
-I don't mean to infringe anyones copyright with the *offline versions*. They are there to prevent dead links for the future. If you feel infringed, please contact me or leave a bug report.
+I don't mean to infringe anyones copyright with the *offline versions*. They are there to prevent dead links for the future. If you feel infringed, please contact me.
 
 # Open questions
 
-For the following questions, I couldn't yet find a topic.
+## Test organization
 
-- How do you express the "functional dependency order" of tests? <br>
+The following are categories / properties a test should express. **The big question is: How**
+
+- Functional dependency
+- Test level:
+  - non-ui / ui tests
+  - unit test / integration test / system test
+- Test runtime
+- Test environment dependency (stand alone test vs. "I need a DB")
+- Test case naming: short version vs. step-by-step 
+
+### How do you express the "functional dependency order" of tests? <br>
 I.e. `test2` makes use of functionality `test1` tests exhaustively. How do I express that in a test? Background: I'd If test1 and test2 both fail, it should be clear, that test1 is the one I should look for an error first.
   - [Idea: Maybe use tags?](./local_resources/structure_tests_with_tags.md)
 
-- How do I express priorities for tests? <Br>
+### How do I express priorities for tests? <Br>
 E.g. there is `test_show_error_message` and `test_software_starts_up`. `test_software_starts_up` is the the test with more priority and if anything happens should be looked at first. How do I express that?
   - [Idea: Maybe use tags?](./local_resources/structure_tests_with_tags.md)
 
@@ -31,16 +41,49 @@ E.g. there is `test_show_error_message` and `test_software_starts_up`. `test_sof
 - How do I express that tests have external dependencies?
   - [Idea: Maybe use tags?](./local_resources/structure_tests_with_tags.md)
 
+### Unit tests, Integration Tests, System Tests, ... Do I have a completely separated test system for each of these? If yes, How do I make sure to not forget to start up each of them after a change?
 
-- Unit tests, Integration Tests, System Tests, ... Do I have a completely separated test system for each of these? If yes, How do I make sure to not forget to start up each of them after a change?
+### Test case naming:
+#### Naming convention 1: short description
+Example:<br>
+*Show error on button press*
+Pros:
+- Easy to find; easy to talk about; most test systems are designed for this naming convention.
 
-- How should I implement the same test with many different inputs? <br>
+Cons:
+- Setup is not described: What happend before the button press?
+- *What should happen after?* If tests are essentially the spec, then it's important to ask *what should happen after the error was shown?* Expressing it with this short style is very difficult.
+
+### Naming convention 2: step-explanation
+Example: <br>
+*Open main screen, enter wrong login information, click login button => error shown*
+
+Pros:
+- The test case becomes very clear
+- New bugs are easily analyzable, because they also describe a list of steps taken
+
+Cons:
+- Difficult to talk about test
+- Test identifiers become long
+- branching becomes cumbersome; related tests might end up far away.
+
+Notes:
+This naming pattern goes well with hierarchical tests, where edges contain *actions* and leaves contain *checks*.
+
+- *Open main screen*
+  - *=> main screen is shown*
+  - *=> login information enterable*
+- *enter wrong login information*
+  - *=> login information is entered*
+- *click login button*
+  - *=> error shown*
+  - *=> opacity of other components is lower*
+
+## How should I implement the same test with many different inputs? <br>
 E.g. I want to test an `add(a,b)` function: do I have many different tests with rather silly names like `test_test_lower_bound` and make it difficult to overview or do I use some kind of CSV table to feed in data? Pros? Cons?
 
-- How do I handle database test? <br>
+## How do I handle database test? <br>
  Do I build up and destroy a database server everytime a test starts that needs the database? Do I use one huge test database containing all test data for all tests and use transactions and rollbacks? What I test code that finishes transaction? What I I'm working with a MySQL database?
-
-- How do I maintain all of the tests?
 
 
 # Collection of topics
