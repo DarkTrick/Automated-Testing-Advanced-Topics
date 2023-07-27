@@ -27,6 +27,22 @@ The following are categories / properties a test should express. **The big quest
 - Test environment dependency (stand alone test vs. "I need a DB")
 - Test case naming: short version vs. step-by-step 
 
+### How do you manage your tests (keep an overview, not forgetting, track)?
+There are various kinds of tests. Each with their own width and depth.
+For example you have unit tests, integration tests, system tests, acceptance tests and so on. 
+How would manage them? How would make them visible? How would you keep track of everything? How would you keep track of what you've already tested and what not.
+
+And +α: How do you go about that topic when some of the tests are automated tests and some are manual tests?
+
+For example, what tools would you use? How would you structure the project and/or tests?
+
+### How do you connect your test results with specific requirements?
+
+Backgroud: As for commercial development, you don't necessarily care if you tests succeed or fail. You care about if the requirements are met or not.
+
+Why not BDD?<br>
+BDD uses concrete use cases, but a real spec is mostly abstract.So you end up with the same problem: You need to map the concrete use cases to the abstract spec.
+
 ### How do you express the "functional dependency order" of tests? <br>
 I.e. `test2` makes use of functionality `test1` tests exhaustively. How do I express that in a test? Background: I'd If test1 and test2 both fail, it should be clear, that test1 is the one I should look for an error first.
   - [Idea: Maybe use tags?](./local_resources/structure_tests_with_tags.md)
@@ -83,8 +99,15 @@ This naming pattern goes well with hierarchical tests, where edges contain *acti
 E.g. I want to test an `add(a,b)` function: do I have many different tests with rather silly names like `test_test_lower_bound` and make it difficult to overview or do I use some kind of CSV table to feed in data? Pros? Cons?
 
 ## How do I handle database test? <br>
- Do I build up and destroy a database server everytime a test starts that needs the database? Do I use one huge test database containing all test data for all tests and use transactions and rollbacks? What I test code that finishes transaction? What I I'm working with a MySQL database?
+*Question*<br> 
+Do I build up and destroy a database server everytime a test starts that needs the database? Do I use one huge test database containing all test data for all tests and use transactions and rollbacks? What I test code that finishes transaction? What I I'm working with a MySQL database?
 
+*Answer* <br>
+Regarding DB construction: 
+- You can build and destroy the whole database everytime (this will probably be very slow, but do the job)
+- (If the DB supports it), you might use transactions or "sessions", that you roll back after each test. However, this is highly DBMS dependent and you might run into problems for specific edge cases (E.g. not many DBMSs support transactions inside transactions inside transactions ... )
+
+As for the data to setup, one possibility is to prepare a set of convenience functions, that will create a certain test environment. But caution: don't overdo it here. Otherwise you might end up with many tests depending on a convenience function, that you then cannot change anymore, because too many depend on it.
 
 # Collection of topics
 
